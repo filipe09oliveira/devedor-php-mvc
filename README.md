@@ -1,1 +1,2 @@
-# devedor-php-mvc
+# php-mvc
+Estrutura MVC em PHP
