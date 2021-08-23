@@ -77,7 +77,7 @@ class DevedorController extends Page
      * @param Request $request
      * @return string
      */
-    public function getCreateDevedor($request)
+    public static function getCreateDevedor($request)
     {
         /** Conteúdo do form de cadastro de devedores */
         $content = View::render('/modules/devedor/form', [
@@ -104,7 +104,7 @@ class DevedorController extends Page
      * @param Request $request
      * @return string
      */
-    public function setCreateDevedor($request)
+    public static function setCreateDevedor($request)
     {
         /** POST VARS */
         $post = $request->getPostVars();
