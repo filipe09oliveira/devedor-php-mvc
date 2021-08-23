@@ -156,7 +156,7 @@ class DevedorController extends Page
      * @param integer $id
      * @return string
      */
-    public function getEditDevedor($request, $id)
+    public static function getEditDevedor($request, $id)
     {
         /** Obtém o devedor do banco de dados */
         $devedor = EntityDevedor::getDevedorById($id);
@@ -192,7 +192,7 @@ class DevedorController extends Page
      * @param integer $id
      * @return string
      */
-    public function setEditDevedor($request, $id)
+    public static function setEditDevedor($request, $id)
     {
         /** Obtém o devedor do banco de dados */
         $devedor = EntityDevedor::getDevedorById($id);
@@ -228,7 +228,7 @@ class DevedorController extends Page
      * @param integer $id
      * @return string
      */
-    public function getDeleteDevedor($request, $id)
+    public static function getDeleteDevedor($request, $id)
     {
         /** Obtém o devedor do banco de dados */
         $devedor = EntityDevedor::getDevedorById($id);
@@ -254,7 +254,7 @@ class DevedorController extends Page
      * @param integer $id
      * @return string
      */
-    public function setDeleteDevedor($request, $id)
+    public static function setDeleteDevedor($request, $id)
     {
         /** Obtém o devedor do banco de dados */
         $devedor = EntityDevedor::getDevedorById($id);
