@@ -79,6 +79,7 @@ class DevedorController extends Page
      */
     public function getCreateDevedor($request)
     {
+        dd("aqui");
         /** Conteúdo do form de cadastro de devedores */
         $content = View::render('/modules/devedor/form', [
             'title' => 'Cadastrar devedor',
