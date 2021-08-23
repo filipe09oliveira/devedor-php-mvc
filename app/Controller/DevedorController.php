@@ -35,7 +35,7 @@ class DevedorController extends Page
 
         /** Renderiza o item */
         while ($devedor = $results->fetchObject(EntityDevedor::class)) {
-            $itens .= View::render('modules/devedor/item', [
+            $itens .= View::render('/modules/devedor/item', [
                 'id' => $devedor->id,
                 'nome' => $devedor->nome,
                 'identificacao' => $devedor->identificacao,
