@@ -1,6 +1,4 @@
 <?php
-
-use App\Controller\DevedorController;
 use App\Http\Response;
 use App\Controller\UserController as UserController;
 
@@ -31,16 +29,5 @@ $router->post('/user/create', [
     ],
     function ($request) {
         return new Response(200, UserController::setCreateUser($request));
-    }
-]);
-
-
-/** ROTA DE CADASTRO DE DEVEDOR */
-$router->get('/devedor/create', [
-    'middlewares' => [
-        'required-login'
-    ],
-    function ($request) {
-        return new Response(200, DevedorController::getCreateDevedor($request));
     }
 ]);
