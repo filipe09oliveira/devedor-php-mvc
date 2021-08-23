@@ -18,7 +18,7 @@ $router->get('/devedor/create', [
         'required-login'
     ],
     function ($request) {
-        dd(new Response(200, DevedorController::getCreateDevedor($request)));
+        dd("aqui");
         return new Response(200, DevedorController::getCreateDevedor($request));
     }
 ]);
