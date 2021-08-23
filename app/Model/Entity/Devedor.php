@@ -152,7 +152,7 @@ class Devedor
      * @param integer $id
      * @return Devedor
      */
-    public function getDevedorById($id)
+    public static function getDevedorById($id)
     {
         return self::getDevedores('id = ' . $id)->fetchObject(self::class);
     }
