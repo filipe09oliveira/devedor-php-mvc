@@ -13,7 +13,7 @@ $router->get('/users', [
 ]);
 
 /** ROTA DE CADASTRO DE DEVEDOR */
-$router->get('/user/create', [
+$router->get('/signup', [
     'middlewares' => [
         'required-logout'
     ],
@@ -23,7 +23,7 @@ $router->get('/user/create', [
 ]);
 
 /** ROTA DE CADASTRO DE DEVEDOR (POST) */
-$router->post('/user/create', [
+$router->post('/signup', [
     'middlewares' => [
         'required-logout'
     ],

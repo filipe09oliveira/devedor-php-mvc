@@ -15,7 +15,7 @@
                     <input type="password" name="senha" class="form-control" placeholder="************" required>
                 </div>
                 <div>
-                    <a href="{{URL}}/user/create">Cadastrar</a>
+                    <a href="{{URL}}/signup">Cadastrar</a>
                     <br><br>
                     <button type="submit" class="btn btn-lg btn-danger btn-block">Entrar</button>
                 </div>
