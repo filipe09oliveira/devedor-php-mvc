@@ -35,7 +35,7 @@ class DevedorController extends Page
 
         /** Renderiza o item */
         while ($devedor = $results->fetchObject(EntityDevedor::class)) {
-            $itens .= View::render('/modules/devedor/item', [
+            $itens .= View::render('modules/devedor/item', [
                 'id' => $devedor->id,
                 'nome' => $devedor->nome,
                 'identificacao' => $devedor->identificacao,
@@ -62,7 +62,7 @@ class DevedorController extends Page
     public static function getDevedores($request)
     {
         /** Conteúdo da HOME */
-        $content = View::render('/modules/devedor/index', [
+        $content = View::render('modules/devedor/index', [
             'itens' => self::getDevedorItems($request, $obPagination),
             'pagination' => parent::getPagination($request, $obPagination),
             'status' => self::getStatus($request),
@@ -80,7 +80,7 @@ class DevedorController extends Page
     public static function getCreateDevedor($request)
     {
         /** Conteúdo do form de cadastro de devedores */
-        $content = View::render('/modules/devedor/form', [
+        $content = View::render('modules/devedor/form', [
             'title' => 'Cadastrar devedor',
             'nome' => '',
             'identificacao' => '',
@@ -167,7 +167,7 @@ class DevedorController extends Page
         }
 
         /** Conteúdo do form de edit de devedor */
-        $content = View::render('/modules/devedor/form', [
+        $content = View::render('modules/devedor/form', [
             'title' => 'Editar devedor',
             'nome' => $devedor->nome,
             'identificacao' => $devedor->identificacao,
@@ -239,7 +239,7 @@ class DevedorController extends Page
         }
 
         /** Conteúdo do form de edit de devedor */
-        $content = View::render('/modules/devedor/delete', [
+        $content = View::render('modules/devedor/delete', [
             'nome' => $devedor->nome,
             'identificacao' => $devedor->identificacao,
         ]);
