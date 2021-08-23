@@ -14,11 +14,8 @@ $router->get('/devedor', [
 
 /** ROTA DE CADASTRO DE DEVEDOR */
 $router->get('/devedor/create', [
-    'middlewares' => [
-        'required-login'
-    ],
+
     function ($request) {
-        dd("aqui");
         return new Response(200, DevedorController::getCreateDevedor($request));
     }
 ]);
